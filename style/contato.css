@@ -1,0 +1,153 @@
+/* Espaçamento entre seções */
+section {
+  margin: 120px 0; /* Mais espaço entre as seções */
+}
+
+.contact-section {
+  padding: 100px 20px; /* Aumentei o padding */
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  margin: 100px 0; /* Espaço extra antes e depois */
+}
+
+.contact-section h2{
+    font-size: 40px;
+}
+
+.contact-section p{
+    font-size: 28px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  padding: 25px;
+  border-radius: 20px;
+  width: 160px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-item:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Cores oficiais no hover */
+.instagram:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-color: #bc1888;
+}
+
+.whatsapp:hover {
+  background: #25D366;
+  border-color: #25D366;
+}
+
+.linkedin:hover {
+  background: #0077B5;
+  border-color: #0077B5;
+}
+
+.email:hover {
+  background: #EA4335; /* Vermelho do Gmail */
+  border-color: #EA4335;
+}
+
+.social-item img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.social-item:hover img {
+  transform: rotate(10deg);
+  filter: brightness(0) invert(1);
+}
+
+.social-item span {
+  font-weight: 700;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-item:hover span {
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Efeito de brilho no hover */
+.social-item::before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  right: -4px;
+  bottom: -4px;
+  z-index: -1;
+  border-radius: 24px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.instagram:hover::before {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  opacity: 0.8;
+}
+
+.whatsapp:hover::before {
+  background: #25D366;
+  opacity: 0.8;
+}
+
+.linkedin:hover::before {
+  background: #0077B5;
+  opacity: 0.8;
+}
+
+.email:hover::before {
+  background: #EA4335; /* Vermelho do Gmail */
+  opacity: 0.8;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 80px 20px;
+    margin: 80px 0;
+  }
+  
+  .social-links {
+    gap: 30px;
+  }
+  
+  .social-item {
+    width: 140px;
+    padding: 20px;
+  }
+  
+  .social-item img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .social-item span {
+    font-size: 16px;
+  }
+}
