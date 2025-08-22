@@ -1,0 +1,28 @@
+.container3{ max-width: auto; 
+    margin: auto; 
+    padding: 20px; 
+    background-color:rgb(0,0,0, 0.8); 
+    color: rgb(132, 134, 131); 
+    margin-top: 400px; height: 1000px; } 
+
+
+    .PAIN{ height: 170px; }
+
+    @media (max-width: 768px) {
+  .container3 {
+    max-width: 100%;
+    margin-top: 200px; 
+    padding: 15px;
+    height: auto; 
+  }
+
+  .PAIN {
+    height: 100px; 
+  }
+}
+
+
+
+
+
+

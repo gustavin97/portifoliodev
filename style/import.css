@@ -1,0 +1,35 @@
+@import url(about.css);
+@import url(style.css);
+@import url(tec.css);
+@import url(form.css);
+
+
+*{ margin: 0; padding: 0; 
+    box-sizing: border-box; } 
+
+
+body { 
+    margin: 0; 
+
+    
+
+    background-image: url(markus-spiske-iar-afB0QQw-unsplash.jpg);
+    height: 100vh; 
+    background-repeat: repeat-y; 
+    background-size: cover; 
+    animation: scrollMatrix 60s linear infinite; } 
+    
+    
+    
+    @keyframes scrollMatrix { 
+        0% { background-position: 0 0; } 
+    100% { background-position: 0 1000%; } 
+}
+
+@media (max-width: 768px) {
+  body {
+    height: 100vh; 
+    background-size: cover; 
+    animation: scrollMatrix 120s linear infinite;
+  }
+}
